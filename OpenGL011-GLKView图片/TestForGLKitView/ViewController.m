@@ -11,7 +11,7 @@
 #import <OpenGLES/ES3/glext.h>
 
 
-@interface ViewController ()<GLKViewDelegate>
+@interface ViewController ()
 {
     EAGLContext *context;
     GLKBaseEffect *cEffect;
@@ -38,7 +38,7 @@
 - (void)setupTexture
 {
     //1、图片路径
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"tu" ofType:@"jpeg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"tu1" ofType:@"jpeg"];
     //2.设置纹理参数
     //纹理坐标原点在屏幕左下角，图片显示原点左上
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@(1),GLKTextureLoaderOriginBottomLeft, nil];
@@ -53,13 +53,15 @@
 {
     //1、顶点数据（顶点坐标，纹理坐标）
     // 2个三角形；6个顶点
-    CGFloat vertextData[] = {
-        0.5,-0.5,0.0f,   1.0f,0.0f,//右下角
-        0.5,0.5,0.0f,   1.0f,1.0f,//右上角
-        -0.5,0.5,0.0f,  0.0f,1.0f,//左上角
-        0.5,-0.5,0.0f,  1.0f,0.0f,//右下
-        -0.5,0.5,0.0f,  0.0,1.0f,//左上
-        -0.5,-0.5,0.0,  0.0,0.0,//左下
+    GLfloat vertextData[] = {
+        
+        0.5, -0.5, 0.0f,    1.0f, 0.0f, //右下
+        0.5, 0.5,  0.0f,    1.0f, 1.0f, //右上
+        -0.5, 0.5, 0.0f,    0.0f, 1.0f, //左上
+        
+        0.5, -0.5, 0.0f,    1.0f, 0.0f, //右下
+        -0.5, 0.5, 0.0f,    0.0f, 1.0f, //左上
+        -0.5, -0.5, 0.0f,   0.0f, 0.0f, //左下
     };
     
     //3、顶点缓冲区
@@ -70,7 +72,7 @@
     //2) 绑定顶点缓冲区
     glBindBuffer(GL_ARRAY_BUFFER, bufferID);
     
-    //3)
+    //3)从内存拷贝到显存
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertextData), vertextData, GL_STATIC_DRAW);
     
     //打开顶点坐标数据通道
