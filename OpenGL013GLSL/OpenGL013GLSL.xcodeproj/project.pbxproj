@@ -15,6 +15,9 @@
 		64E256C924DA4DF10078197A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E256C724DA4DF10078197A /* LaunchScreen.storyboard */; };
 		64E256CC24DA4DF10078197A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E256CB24DA4DF10078197A /* main.m */; };
 		64E256D424DA4F460078197A /* CCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E256D324DA4F460078197A /* CCView.m */; };
+		64E256D624DF9F8B0078197A /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64E256D524DF9F8B0078197A /* shaderv.vsh */; };
+		64E256D824DFA0050078197A /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64E256D724DFA0050078197A /* shaderf.fsh */; };
+		64E256DA24E041430078197A /* tu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 64E256D924E041430078197A /* tu.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		64E256CB24DA4DF10078197A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64E256D224DA4F460078197A /* CCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCView.h; sourceTree = "<group>"; };
 		64E256D324DA4F460078197A /* CCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCView.m; sourceTree = "<group>"; };
+		64E256D524DF9F8B0078197A /* shaderv.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		64E256D724DFA0050078197A /* shaderf.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		64E256D924E041430078197A /* tu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tu.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +74,12 @@
 				64E256D224DA4F460078197A /* CCView.h */,
 				64E256D324DA4F460078197A /* CCView.m */,
 				64E256BA24DA4DED0078197A /* AppDelegate.m */,
+				64E256D924E041430078197A /* tu.jpeg */,
 				64E256BC24DA4DED0078197A /* SceneDelegate.h */,
 				64E256BD24DA4DED0078197A /* SceneDelegate.m */,
 				64E256BF24DA4DED0078197A /* ViewController.h */,
+				64E256D524DF9F8B0078197A /* shaderv.vsh */,
+				64E256D724DFA0050078197A /* shaderf.fsh */,
 				64E256C024DA4DED0078197A /* ViewController.m */,
 				64E256C224DA4DED0078197A /* Main.storyboard */,
 				64E256C524DA4DF10078197A /* Assets.xcassets */,
@@ -138,9 +147,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E256DA24E041430078197A /* tu.jpeg in Resources */,
 				64E256C924DA4DF10078197A /* LaunchScreen.storyboard in Resources */,
 				64E256C624DA4DF10078197A /* Assets.xcassets in Resources */,
 				64E256C424DA4DED0078197A /* Main.storyboard in Resources */,
+				64E256D624DF9F8B0078197A /* shaderv.vsh in Resources */,
+				64E256D824DFA0050078197A /* shaderf.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
